@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.banner{
+    background-color: black;
+    background-image: url(./images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    padding: 0 200px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu a{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.logo img{
+    padding: 30px;
+}
+
+.content{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+    height: calc(100% - 100px);
+}
+
+.title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family:'Montserrat';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* dropdown */
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+}
+
+.dropdown-content a {
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu button{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 30px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.menu button:hover{
+    color: aqua;
+}
+
+.menu button::after {
+    content: "";
+    background-image: url(images/down-arrow.png);
+    background-size: 21px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 38%;
+    left: 100%;
+    width: 25px;
+    height: 25px;
+}
